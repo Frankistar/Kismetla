@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'kismetla';
-    src: url('/Assets/lightstories-webfont.woff2') format('woff2');
+    src: url('lightstories-webfont.woff2') format('woff2');
     font-display: swap;
 }
 
