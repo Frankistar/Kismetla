@@ -61,12 +61,13 @@ nav .logo {
     align-items: end;
 }
 
-.navbar a {
+nav a {
     text-decoration: none;
     color: inherit;
 }
 
-.hambuger, .hambuger-menu {
+.hambuger,
+.hambuger-menu {
     display: none;
 }
 
@@ -405,6 +406,127 @@ input.w-button {
     letter-spacing: 0.1rem;
 }
 
+/* 
+DESKTOP = ABOUT
+*/
+
+#about section {
+    height: 2000px;
+    width: 100%;
+    text-align: center;
+    background-color: #fad78a;
+    align-items: center;
+}
+
+#about section .about {
+    width: 700px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#about section .about-img {
+    width: inherit;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.kismetla.bold {
+    font-size: 48px;
+}
+
+#about section .about-img .img {
+    height: 700px;
+    width: inherit;
+    border-radius: 50%;
+    background: url(./Assets/aboutImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about section .about .address {
+    height: 580px;
+    width: inherit;
+    font-family: monospace;
+    font-size:54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+#about section .about .address h2 {
+    font: inherit;
+}
+
+#about section .about .address a {
+    color: inherit;
+}
+
+#about section .about .address a:last-child {
+    font-size: 50px;
+}
+
+#about section .about .press {
+    height: 190px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about section .about .click-here {
+    font-family: monospace;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#about section .about .click-here h2 {
+    font: inherit;
+}
+
+#about section .about .click-here a {
+    color: inherit;
+}
+
+/* 
+DESKTOP = COOKBOOK
+*/
+
+#cookbook section {
+    height: 2000px;
+    width: 100%;
+    text-align: center;
+    background-color: #fad78a;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:430px) {
     .navbar {
         display: none;
@@ -650,7 +772,59 @@ input.w-button {
     .hambuger.active .line:first-child {
         transform: translateY(0px) rotate(45deg);
     }
+
     .hambuger.active .line:last-child {
         transform: translateY(-10px) rotate(-45deg);
+    }
+
+    #about section {
+        height: 1200px;
+    }
+
+    #about section .about {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    h1.kismetla.bold {
+        display: none;
+    }
+
+    #about section .about-img {
+        align-items: center;
+        height: 300px;
+    }
+
+    #about section .about-img .img {
+        height: 300px;
+        width: 300px;
+    }
+
+    #about section .about .address {
+        font-size: 25px;
+        height: fit-content;
+        justify-content: initial;
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+
+    #about section .about .address h2 {
+        line-height: 40px;
+    }
+
+    #about section .about .address a:last-child {
+        font-size: 22px;
+    }
+
+    .kismetla.bold {
+        font-size: 38px;
+    }
+
+    #about section .about .press {
+        height: 225px;
+    }
+
+    #about section .about .click-here {
+        font-size: 22px;
     }
 }

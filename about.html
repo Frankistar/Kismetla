@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>About</title>
+  </head>
+  <body id="about">
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <a href="./index.html" class="kismetla">kismet</a>
+          </div>
+          <div class="navbar">
+            <a href="./about.html" class="kismetla">about</a>
+            <a href="./cookbook.html" class="kismetla">Cookbook</a>
+            <a href="#" class="kismetla">Menu</a>
+            <a href="#" class="kismetla">Catering</a>
+            <a href="#" class="kismetla">Resy</a>
+            <a href="#" class="kismetla">Shop</a>
+            <a href="#" class="kismetla">Ig</a>
+          </div>
+          <div class="hambuger">
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="hambuger-menu">
+        <div class="menu">
+          <a href="./about.html" class="kismetla">about</a>
+        </div>
+        <div class="menu">
+          <a href="./cookbook.html" class="kismetla">Cookbook</a>
+        </div>
+        <div class="menu">
+          <a href="#" class="kismetla">Menu</a>
+        </div>
+        <div class="menu">
+          <a href="#" class="kismetla">Catering</a>
+        </div>
+        <div class="menu">
+          <a href="#" class="kismetla">Resy</a>
+        </div>
+        <div class="menu">
+          <a href="#" class="kismetla">Shop</a>
+        </div>
+        <div class="menu">
+          <a href="#" class="kismetla">Ig</a>
+        </div>
+      </div>
+
+      <section>
+        <div class="about">
+          <div class="about-img">
+            <h1 class="kismetla bold">About</h1>
+            <div class="img"></div>
+          </div>
+          <div class="address">
+            <h2>4648 Hollywood Blvd. Los Angeles, CA 90027 (Google Maps ↗)</h2>
+            <h2>5pm - 10pm everyday</h2>
+            <a href="#">323 409 0404</a>
+            <a href="#">info@kismetlosangeles.com</a>
+          </div>
+          <div class="press">
+            <h2 class="kismetla bold">Press</h2>
+            <div class="click-here">
+              <h2>For a selection of articles and features</h2>
+              <a href="#">Click here</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-top">
+          <form action="get">
+            <h1>sign up for the kismet mailing list</h1>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email address"
+            />
+            <input
+              type="submit"
+              name="submit"
+              value="Join"
+              class="submit-button w-button"
+            />
+          </form>
+
+          <div class="visit">
+            <p>visit kismet rotisserie</p>
+          </div>
+
+          <div class="copywright">
+            <p>© 2023 Kismet All Rights Reserved</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </footer>
+
+      <div class="bottom-slider">
+        <div class="slider-track">
+          <div class="slide">
+            <p class="kismetla slider">
+              everyday from 5pm to 10pm, come say hi!
+            </p>
+          </div>
+
+          <div class="slide">
+            <p class="kismetla slider">
+              everyday from 5pm to 10pm, come say hi!
+            </p>
+          </div>
+
+          <div class="slide">
+            <p class="kismetla slider">
+              everyday from 5pm to 10pm, come say hi!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const hambuger = document.querySelector(".hambuger");
+      const hambugerMenu = document.querySelector(".hambuger-menu");
+
+      hambuger.addEventListener("click", () => {
+        hambuger.classList.toggle("active");
+        hambugerMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
