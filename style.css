@@ -1301,6 +1301,7 @@ DESKTOP = COOKBOOK
     .order-btn {
         width: 100%;
         height: 105px;
+        background-position: center;
     }
 
 }
